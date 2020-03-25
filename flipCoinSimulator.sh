@@ -42,7 +42,7 @@ function singlet(){
 	for (( flip=1; flip<=$noOfTimesFlipCoin; flip++ ))
 	do
 		randomFlip=$((RANDOM%2))
-      if [ $randomFlip -eq $HEAD ]
+		if [ $randomFlip -eq $HEAD ]
 		then
 				((countH++))
 		else
@@ -217,7 +217,7 @@ function triplate(){
 	perHHH=`echo "scale=2; $HHH*100/$noOfTimesFlipCoin" | bc`
 	perHHT=`echo "scale=2; $HHT*100/$noOfTimesFlipCoin" | bc`
 	perHTH=`echo "scale=2; $HTH*100/$noOfTimesFlipCoin" | bc`
-   perTHH=`echo "scale=2; $THH*100/$noOfTimesFlipCoin" | bc`
+	perTHH=`echo "scale=2; $THH*100/$noOfTimesFlipCoin" | bc`
 	perHTT=`echo "scale=2; $HTT*100/$noOfTimesFlipCoin" | bc`
 	perTHT=`echo "scale=2; $THT*100/$noOfTimesFlipCoin" | bc`
 	perTTH=`echo "scale=2; $TTH*100/$noOfTimesFlipCoin" | bc`
